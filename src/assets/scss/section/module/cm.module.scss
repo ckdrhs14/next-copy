@@ -1,0 +1,136 @@
+@import "../../setting/mixin";
+
+// section : common
+.section {
+    position:relative; 
+    background: var(--main-bg-color); 
+    color: #fff; 
+    min-height:800px; 
+    height:100vh; 
+    @include center;
+    overflow:hidden;
+}
+
+.innerWrap {
+    position:relative;
+    overflow:hidden;
+    width:1200px;
+    margin:0 auto;
+    @include transition;
+    .box {
+        display:flex;
+        position:relative;
+    }
+    & > .title {
+        position: relative;
+        height:80px;
+        font-weight:700;
+        p {
+            color: #fff;
+            font-size: 70px;
+            position: absolute;
+            @include translate(0);
+            &:nth-child(1){
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+            }
+            &:nth-child(2){
+                color: #fff;
+                animation: animate 4s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+.btnGroup {
+	margin:30px 0;
+	&.center {
+		text-align:center;
+	}
+}
+
+.btn {
+	display:inline-block;
+	color:#fff;
+	padding:15px 60px;
+	@include transition;
+	position: relative;
+	font-size:1em;
+	&::before {
+		content: '';
+		@include position(absolute, $top:0, $left:0);
+		width: $full;
+		height: $full;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.1);
+		@include transition(.3s);
+	}
+	&:hover::before {
+		opacity: 0 ; transform: scale(0.5,0.5);
+	}
+	&::after {
+		content: '';
+		@include position(absolute, $top:0, $left:0);
+		width: $full;
+		height: $full;
+		z-index: 1;
+		opacity: 0;
+		@include transition(.3s);
+		border: 1px solid rgba(255,255,255,0.5);
+		transform: scale(1.2,1.2);
+	}
+	&:hover::after {
+		opacity: 1;
+		transform: scale(1,1);
+	}
+}
+
+
+
+.swiper {
+  width: $full;
+  height: $full;
+}
+
+.swiper-slide {
+	.imgArea {
+		img {
+			display: block;
+			width: $full;
+			height: $full;
+			object-fit: cover;
+		}
+	}
+	
+}

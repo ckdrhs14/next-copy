@@ -1,0 +1,145 @@
+// section5
+.section5 {
+    background-color:#111;
+    .inner {
+        width:$full;
+        height:auto;
+        border-radius:20px;
+        margin:0 auto;
+        color:#000;
+        z-index:10;
+        @include padding($top:50px, $bottom:50px);
+        ul {
+            border:1px solid #555;
+            border-width:1px 0 1px 0;
+            li {
+                position:relative; 
+                width:$full;
+                box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                @include padding($top:15px, $right:20px, $bottom:15px, $left:20px);
+                display:flex;
+                align-items:center;
+                &::before {
+                    display:block;
+                    content:'';
+                    width:$zero;
+                    height:1px;
+                    background:#fff;
+                    @include position(absolute, $bottom:0, $left:0);
+                    @include transition(1.2s);
+                }
+                &:hover::before {
+                    width:100%;
+                }
+                div {
+                    display:flex;
+                    align-items:center;
+                    color:#fff;
+                    line-height:1.8;
+                    font-size:16px;
+                    &.row {
+                        > p {
+                            @include margin($right:30px);
+                            min-width:115px;
+                        }
+                    }
+                    > p {
+                        @include position(relative);
+                        font-size:16px;
+                        word-break:keep-all;
+                        &::before {
+                            display:block;
+                            content:'';
+                            width:1px;
+                            height:14px;
+                            background-color:#fff;
+                            @include position(absolute, $top:50%, $left:-15px);
+                            @include translateY;
+                        }
+                        b {
+                            color:#fff;
+                        }
+                        &.tit {
+                            @include position(relative);
+                            font-size:16px;
+                            color:#fff;
+                            font-weight:600;
+                            padding-left:28px;
+                            min-width:150px;
+                            &::before {
+                                display:block;
+                                content:'';
+                                width:20px;
+                                height:20px;
+                                @include position(absolute, $top:50%, $left:0);
+                                @include translateY;
+                            }
+                            &::before {
+                                display:flex;
+                                justify-content: center;
+                                align-items:center;
+                                content:"✔";
+                                color:#1969ff;
+                                background-color:transparent;
+                            }
+                        }
+                    }
+                }
+                &.on {
+                    div {
+                        p {
+                            &.date {
+                                b {
+                                    color:#9b815d;
+                                }
+                            }
+                        }
+                    }
+                }
+                .detail {
+                    @include margin($top:10px, $bottom:5px);
+                    @include padding($top:2px, $right:15px, $bottom:2px, $left:15px);
+                    @include position(absolute, $top:-40px, $bottom:0, $left:0);
+                    visibility:hidden;
+                    opacity:0;
+                    background:#fff;
+                    color:#000;
+                    font-size:14px;
+                    width:auto;
+                    max-width:100%;
+                    height:35px;
+                    border-radius:30px;
+                    @include transition(.1s);
+                    font-weight:600;
+                    text-align:center;
+                    border:1px solid #000;
+                    &::before {
+                        display:block;
+                        content:'';
+                        width: 0;
+                        height: 0;
+                        border-bottom: 10px solid transparent;
+                        border-top: 5px solid #fff;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        @include position(absolute, $bottom:-15px, $left:65px);
+                    }
+                    p {
+                        @include text-overflow;
+                        font-size:14px;
+                    }
+                }
+                &:hover {
+                    .detail {
+                        visibility:visible;
+                        opacity:1;
+                    }
+                }
+            }
+            li + li {
+                @include padding($top:10px);
+                border-top:1px solid #555;
+            }
+        }
+    }
+}

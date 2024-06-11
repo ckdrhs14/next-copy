@@ -1,0 +1,122 @@
+@import "../../setting/mixin";
+
+// section1
+.section1 {
+    position:relative;
+    width:$full;
+    height:100vh;
+    overflow:hidden;
+    background-color:#000;
+}
+
+.objectArea {
+    width:450px;
+    height:450px;
+    background:#000;
+    border-radius:$full;
+    @include position(absolute, $top:calc(50% + 100px), $left:50%);
+    @include translate;
+    z-index:100;
+    opacity:1;
+    animation: blingbling 5s linear infinite;
+    transition:width .5s, height .5s;
+    opacity:0;
+    &::before {
+        display:block;
+        content:'';
+        width:$full;
+        height:$full;
+        background:#000;
+        @include position(absolute, $top:0, $left:0);
+        border-radius:$full;
+        z-index:-1;
+    }
+    img {
+        width:$full;
+        height:$full;
+        opacity:.5;
+        animation: rotate 240s linear .1s;
+        filter:grayscale(1);
+    }
+}
+
+
+.videoBg {
+    @include position(relative);
+    width:100vw;
+    height:100vh;
+    opacity:.2;
+}
+.videoBg2 {
+    @include position(absolute, $top:0, $left:0);
+    width:100vw;
+    height:100vh;
+    opacity:.3;
+}
+
+.slogan {
+    width:$full;
+    color:#fff;
+    @include position(absolute, $top:50%, $left:50%);
+    @include translate;
+    z-index:1000;
+    font-size:4em;
+    line-height:1;
+    font-weight:800;
+    text-align:center;
+    span {
+        font-size:28px;
+        font-weight:300;
+        letter-spacing:.1em;
+    }
+    .maintxt {
+        min-height:72px;
+        @include position(absolute, $bottom:-60px, $left:50%);
+        @include translateX;
+        width:$full;
+        opacity:$zero;
+    }
+    .subtxt {
+        font-size:.6em;
+        @include position(absolute, $bottom:-120px, $left:50%);
+        @include translateX;
+        width:$full;
+        opacity:$zero;
+    }
+}
+
+@keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes blingbling {
+    0% {
+      filter:saturate(100%);
+    }
+    80% {
+      filter:saturate(200%);
+    }
+    100% {
+      filter:saturate(100%);
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .objectArea {
+        width:430px;
+        height:430px;
+    }
+
+	.slogan {
+        font-size:3.6em;
+    }
+}

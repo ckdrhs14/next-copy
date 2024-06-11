@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #000;
+    --main-font-color: #fff;
+
+    --mainFont: "pretendard"
+}
+
+body {
+    background:var(--main-bg-color);
+    color:var(--main-font-color);
+    font-family:var(--mainFont);
+}

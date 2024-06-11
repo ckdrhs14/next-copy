@@ -1,0 +1,294 @@
+<div class="box">
+                    <div class="swiper workSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="page/list/idfmall.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_01.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">IDF 몰<span>(IDF MALL)</span></h3>
+                                        <p><b>사업기간</b> : 2020.07 ~ 2020.09</p>
+                                        <p><b>발주처</b> : 인동에프엔</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/daehyun.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_02.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">대현인사이드<span>(DaeHyun Inside)</span></h3>
+                                        <p><b>사업기간</b> : 2020.08 ~ 2020.11</p>
+                                        <p><b>발주처</b> : (주)대현</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/giodano.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_06.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">지오다노<span>(GIORDANO)</span></h3>
+                                        <p><b>사업기간</b> : 2020.10 ~ 2020.11</p>
+                                        <p><b>발주처</b> : (주)지오다노</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/ihmall.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_05.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">이현어패럴<span>(IH MALL)</span></h3>
+                                        <p><b>사업기간</b> : 2020.09 ~ 2020.10</p>
+                                        <p><b>발주처</b> : (주)이현어패럴</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/esthermall.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_04.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">에스더몰<span>(ESTHER MALL)</span></h3>
+                                        <p><b>사업기간</b> : 2020.10 ~ 2020.12</p>
+                                        <p><b>발주처</b> : 에스더포뮬러(주)</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/celecon.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_shop_03.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">셀렉온<span>(CELECON)</span></h3>
+                                        <p><b>사업기간</b> : 2020.09 ~ 2020.10</p>
+                                        <p><b>발주처</b> : (주)셀렉온</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#000", border:"1px solid #fff"}}></span>(#000)</p>
+                                                <p>Sub <span style={{background:"#fff", border:"1px solid #000"}}></span>(#fff)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/seongnamCity-Onestop.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_22.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">성남시 생활민원사이트<span>(One-Stop)</span></h3>
+                                        <p><b>사업기간</b> : 2022.11 ~ 2022.12</p>
+                                        <p><b>발주처</b> : 성남시청</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#bfd2e1"}}></span>(#bfd2e1)</p>
+                                                <p>Sub <span style={{background:"#ecc8d4"}}></span>(#ecc8d4)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/seongnamCity.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_24.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">성남시청<span>(SeongNam CityHall)</span></h3>
+                                        <p><b>사업기간</b> : 2023.04 ~ 2023.08</p>
+                                        <p><b>발주처</b> : 성남시청</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#d84048"}}></span>(#d84048)</p>
+                                                <p>Sub <span style={{background:"#f8dee0"}}></span>(#f8dee0)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/sneducare.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_14.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">성남육아종합지원센터<span>(Sneducare)</span></h3>
+                                        <p><b>사업기간</b> : 2021.09 ~ 2021.12</p>
+                                        <p><b>발주처</b> : 성남시육아종합지원센터</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#2653b0"}}></span>(#2653b0)</p>
+                                                <p>Sub <span style={{background:"#7595cb"}}></span>(#7595cb)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/seodaemun.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_11.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">서대문구립도서관<span>(SeoDaeMun Lib)</span></h3>
+                                        <p><b>사업기간</b> : 2022.11 ~ 2022.12</p>
+                                        <p><b>발주처</b> : 서대문구립도서관</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#6b6ab0"}}></span>(#6b6ab0)</p>
+                                                <p>Sub <span style={{background:"#8f8ed4"}}></span>(#8f8ed4)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/gangnam.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_01.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">강남구립도서관<span>(Gangnam-gu Lib)</span></h3>
+                                        <p><b>사업기간</b> : 2021.06 ~ 2021.09</p>
+                                        <p><b>발주처</b> : 강남구도서관사업소</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#3598db"}}></span>(#3598db)</p>
+                                                <p>Sub <span style={{background:"#0a518f"}}></span>(#0a518f)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/gdbookcafe.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_21.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">강동구북카페<span>(Gangdong BookCafe)</span></h3>
+                                        <p><b>사업기간</b> : 2021.12 ~ 2022.02</p>
+                                        <p><b>발주처</b> : 강동구북카페</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#5d3a1e"}}></span>(#5d3a1e)</p>
+                                                <p>Sub <span style={{background:"#824714"}}></span>(#824714)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/artBookBogo.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_12.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">서울아트책보고<span>(Art BookBoGo)</span></h3>
+                                        <p><b>사업기간</b> : 2022.09 ~ 2023.03</p>
+                                        <p><b>발주처</b> : (주)더그림</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#f45104"}}></span>(#f45104)</p>
+                                                <p>Sub <span style={{background:"#ffd900"}}></span>(#ffd900)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/goyang.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_04.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">고양시립도서관<span>(Goyang Library)</span></h3>
+                                        <p><b>사업기간</b> : 2022.11 ~ 2023.06</p>
+                                        <p><b>발주처</b> : 고양시도서관사업소</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#967759"}}></span>(#967759)</p>
+                                                <p>Sub <span style={{background:"#bca280"}}></span>(#bca280)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="page/list/songpa.html" target="_blank" title="새창열림">
+                                    <div class="imgArea">
+                                        <img src="img/portfolio/web_lib_15.jpg" />
+                                    </div>
+                                    <div class="txtArea">
+                                        <h3 class="title">송파구립도서관<span>(Songpa Library)</span></h3>
+                                        <p><b>사업기간</b> : 2021.08 ~ 2022.02</p>
+                                        <p><b>발주처</b> : 송파구도서관사업소</p>
+                                        <div class="color">
+                                            <p><b>color</b></p>
+                                            <div>
+                                                <p>Main <span style={{background:"#3a5fc9"}}></span>(#3a5fc9)</p>
+                                                <p>Sub <span style={{background:"#8ba9fc"}}></span>(#8ba9fc)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
