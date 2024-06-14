@@ -1,0 +1,55 @@
+.fix_bn {
+    @include position(absolute, $top:-34px);
+    overflow: hidden;
+    width: $full;
+    height: 34px;
+    border-bottom: 1px solid #000;
+    font-size: $zero;
+    z-index:1000;
+    @include transition;
+    > div {
+        overflow: hidden;
+        @include position(absolute, $top:0, $left:0);
+        z-index: 1;
+        width: $full;
+        background-color: #000;
+        white-space: nowrap;
+        &.right {
+            @include position(absolute, $right:0, $left:auto);
+            right: 0;
+            left: auto;
+            background-color: #fff;
+            clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);
+        }
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            animation: marquee 40000ms linear infinite;
+            span {
+                display: inline-block;
+                height: 34px;
+                @include margin($left:190px);
+                color: #000;
+                font-size: 17px;
+                font-weight: 700;
+                vertical-align: middle;
+                line-height: 34px;
+            }
+        }
+        &.left {
+            p {
+                span {
+                    color:#fff;
+                }
+            }
+        }
+    }
+    &.on {
+        top:-68px;
+    }
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}

@@ -1,0 +1,62 @@
+@import "../../setting/mixin";
+
+// section2
+.section2 {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 19%, rgba(14,14,14,1) 100%);
+    .innerWrap {
+        .box {
+            @include margin($bottom:30px);
+            justify-content: center;
+        }
+        .imgArea {
+            width:300px;
+            height:auto;
+            @include margin($right:50px);
+            overflow:hidden;
+            @include transition;
+            img {
+                filter:grayscale(.4);
+            }
+        }
+        .txtArea {
+            font-weight:500;
+            .title {
+                position:relative;
+                font-size:2.11em;
+                font-weight:400;
+                z-index:1;
+                strong {
+                    position:relative;
+                    font-weight:800;
+                }
+                .highlight {
+                    &::before {
+                        content: "";
+                        display:block;
+                        @include position(absolute, $bottom:0, $left:-2.5%);
+                        width: calc($full + 5%);
+                        height:15px;
+                        background-color: #9b815d;
+                        opacity:1;
+                        z-index:-1;
+                    }
+                }
+            }
+            .txt {
+                @include position(relative);
+                @include margin($top:15px, $bottom:15px);
+                line-height:1.6;
+                z-index:1;
+                word-break:keep-all;
+                span {
+                    font-size:1.1em;
+                    font-weight:600;
+                    @include margin($right:2px);
+                }
+            }
+        }
+    }
+    .btnGroup {
+        text-align: center;
+    }
+}

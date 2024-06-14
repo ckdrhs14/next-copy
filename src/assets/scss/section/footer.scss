@@ -1,0 +1,21 @@
+// footer
+.footer {
+    width:$full;
+    @include padding($top:40px, $right:30px, $bottom:40px, $left:30px);
+    background:#000;
+    font-size:14px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    border-top:1px solid #333;
+    p {
+        width:$full;
+        text-align:center;
+        color:#ddd;
+        font-weight:600;
+        word-break:keep-all;
+        &:last-child {
+            color:#777;
+        }
+    }
+}
