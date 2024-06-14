@@ -22,7 +22,7 @@
     
     .innerWrap {
         .skillSwiper {
-            @include margin($top:50px, $bottom:70px);
+            @include margin($top:50px, $bottom:100px);
             @include padding($bottom:70px);        
             a {
                 .imgArea {
@@ -59,10 +59,14 @@
                 @include buttonStyle();
                 right:0;
             }
-            .swiper-pagination-progressbar {
-                @include position(absolute, $top:auto, $bottom:0);
-                .swiper-pagination-progressbar-fill {
-                    background:#fff;
+            :global {
+                .swiper-pagination-progressbar {
+                    @include position(absolute, $top:auto, $bottom:0);
+                    :global {
+                        .swiper-pagination-progressbar-fill {
+                            background:#fff !important;
+                        }
+                    }
                 }
             }
         }

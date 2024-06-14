@@ -9,8 +9,9 @@
     background:rgba(0,0,0,.6);
     border-bottom:1px solid #333;
     backdrop-filter: blur(1.5px);
+    top:-80px;
     &.on {
-        @include position(fixed, $top: 0 !important);
+        @include position(fixed, $top: 0);
     }
     .menu {
         display:inline-block;

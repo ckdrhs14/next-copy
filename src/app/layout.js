@@ -1,4 +1,4 @@
-import "@/assets/scss/style.scss";
+import "../assets/scss/style.scss";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,3 +12,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+

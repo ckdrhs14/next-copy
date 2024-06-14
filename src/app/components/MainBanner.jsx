@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
-import styles from "@/assets/scss/section/module/mb.module.scss";
-import stylesCommon from "@/assets/scss/section/module/cm.module.scss";
+import styles from "../../assets/scss/section/module/mb.module.scss";
+import stylesCommon from "../../assets/scss/section/module/cm.module.scss";
 
 
 const MainBanner = () => {
@@ -12,7 +12,7 @@ const MainBanner = () => {
     useLayoutEffect(() => {
 
         gsap.to(moonRef.current, {
-            y: -50,
+            y: -100,
             delay: 0,
             duration: 1.3,
             opacity: 1,

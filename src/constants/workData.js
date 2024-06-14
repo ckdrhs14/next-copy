@@ -165,3 +165,11 @@ export const workData = [
       subColor: '#8ba9fc',
     }
 ];
+
+export const result = workData.reduce((acc, curr) => {
+  const { type } = curr;
+  if (acc[type]) acc[type].push(curr);  // [3]
+  else acc[type] = [curr];              // [4]
+  return acc;  
+
+}, {});

@@ -1,14 +1,16 @@
 import React, { useRef } from 'react';
-import styles from "@/assets/scss/section/module/sk.module.scss";
-import stylesCommon from "@/assets/scss/section/module/cm.module.scss";
+import styles from "../../assets/scss/section/module/sk.module.scss";
+import stylesCommon from "../../assets/scss/section/module/cm.module.scss";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
+import { Pagination } from "swiper/modules";
+import Link from 'next/link'
 
 
-import { skillData } from "../constants/skillData";
+import { skillData } from "../../constants/skillData";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -51,16 +53,19 @@ const Skill = () => {
                     <p>Skill PortFolio</p>
                 </h3>
 
-                <div className={`swiper-container ${styles.skillSwiper}`}>
-                <Swiper
+                <Swiper className={styles.skillSwiper}
                     loop={true} // 슬라이드 루프
                     spaceBetween={30} // 슬라이스 사이 간격
                     slidesPerView={3} // 보여질 슬라이스 수
+                    pagination={{
+                        type: "progressbar",
+                    }}
+                    modules={[Pagination]}
                 >
                     {skillData.map((slide) => (
                     <SwiperSlide key={slide.id}>         
                         <div className="swiper-slide">
-                            <a href="page/list/idfmall.html" target="_blank" title="새창열림">
+                            <Link href="page/list/idfmall.html" target="_blank" title="새창열림">
                                 <div className={styles.imgArea}>
                                     <img src={url + 'skill_' + slide.number + '.jpg'} />
                                 </div>
@@ -75,15 +80,14 @@ const Skill = () => {
 										</div>
 									</div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </SwiperSlide>
                     ))}
                 </Swiper>
-                </div>
 
                 <div className={`${stylesCommon.btnGroup} ${stylesCommon.center} ${styles.btnGroup}`}>
-                    <a href="page/introduce.html" className={stylesCommon.btn}>전체보기</a>
+                    <Link href="page/introduce.html" className={stylesCommon.btn}>전체보기</Link>
                 </div>
             </div>
         </div>

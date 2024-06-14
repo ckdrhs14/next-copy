@@ -6,13 +6,16 @@
 @import "setting/reset";
 @import "setting/mixin";
 
-@import 'section/common';
-@import 'section/header';
+
 @import 'section/footer';
 @import 'section/fixbn';
-@import 'section/mainbanner';
-@import 'section/introduce';
-@import 'section/work';
-@import 'section/skill';
-@import 'section/timeline';
+
+@import 'section/module/cm.module.scss';
+@import 'section/module/hd.module.scss';
+@import 'section/module/mb.module.scss';
+@import 'section/module/itd.module.scss';
+@import 'section/module/wk.module.scss';
+@import 'section/module/sk.module.scss';
+@import 'section/module/tl.module.scss';
+@import 'section/module/ct.module.scss';
 

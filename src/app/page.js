@@ -1,14 +1,15 @@
 "use client";
 
 import React from 'react';
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import MainBanner from "@/components/MainBanner";
-import Introduce from "@/components/Introduce";
-import Skill from "@/components/Skill";
-import Timeline from "@/components/Timeline";
-import Work from "@/components/Work";
-import Fixbn from "@/components/Fixbn";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MainBanner from "./components/MainBanner";
+import Introduce from "./components/Introduce";
+import Skill from "./components/Skill";
+import Timeline from "./components/Timeline";
+import Work from "./components/Work";
+import Fixbn from "./components/Fixbn";
+//import Canvas from "./components/Canvas";
 import Image from "next/image";
 
 

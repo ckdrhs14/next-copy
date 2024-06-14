@@ -1,14 +1,15 @@
 import React, { useRef } from 'react';
-import styles from "@/assets/scss/section/module/wk.module.scss";
-import stylesCommon from "@/assets/scss/section/module/cm.module.scss";
+import styles from "../../assets/scss/section/module/wk.module.scss";
+import stylesCommon from "../../assets/scss/section/module/cm.module.scss";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
+import { Pagination } from "swiper/modules";
+import Link from 'next/link'
 
-
-import { workData } from "../constants/workData";
+import { workData } from "../../constants/workData";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,7 +22,7 @@ const Work = () => {
 
     useGSAP(
         () => {
-        const actions = gsap.utils.toArray('.innerWrap');
+        const actions = gsap.utils.toArray('.innerWrap')
         actions.forEach((action) => {
             gsap.set(action, { opacity: 0, y: 50,});
             gsap.to(action, {
@@ -50,16 +51,19 @@ const Work = () => {
                     <p>Work PortFolio</p>
                 </h3>
 
-                <div className={`swiper-container ${styles.workSwiper}`}>
-                <Swiper
+                <Swiper className={styles.workSwiper}
                     loop={true} // 슬라이드 루프
                     spaceBetween={30} // 슬라이스 사이 간격
                     slidesPerView={3} // 보여질 슬라이스 수
+                    pagination={{
+                        type: "progressbar",
+                    }}
+                    modules={[Pagination]}
                 >
                     {workData.map((slide) => (
                     <SwiperSlide key={slide.id}>         
                         <div className="swiper-slide">
-                            <a href="page/list/idfmall.html" target="_blank" title="새창열림">
+                            <Link href="page/list/idfmall.html" target="_blank" title="새창열림">
                                 <div className={styles.imgArea}>
                                     <img src={url + 'web_' + slide.type + '_' + slide.number + '.jpg'} />
                                 </div>
@@ -75,15 +79,14 @@ const Work = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </SwiperSlide>
                     ))}
                 </Swiper>
-                </div>
 
                 <div className={`${stylesCommon.btnGroup} ${stylesCommon.center} ${styles.btnGroup}`}>
-                    <a href="page/introduce.html" className={stylesCommon.btn}>전체보기</a>
+                    <Link href="page/introduce.html" className={stylesCommon.btn}>전체보기</Link>
                 </div>
             </div>
         </div>

@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
-import styles from "@/assets/scss/section/module/itd.module.scss";
-import stylesCommon from "@/assets/scss/section/module/cm.module.scss";
+import styles from "../../assets/scss/section/module/itd.module.scss";
+import stylesCommon from "../../assets/scss/section/module/cm.module.scss";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import Link from 'next/link'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -58,7 +59,7 @@ const Introduce = () => {
                         </div>
                     </div>
                     <div className={`${stylesCommon.btnGroup} ${styles.btnGroup}`}>
-                        <a href="page/introduce.html" className={stylesCommon.btn}>소개 더보기</a>
+                        <Link href="page/introduce.html" className={stylesCommon.btn}>소개 더보기</Link>
                     </div>
                 </div>
             </div>

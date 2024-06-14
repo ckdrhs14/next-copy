@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import styles from "@/assets/scss/section/module/tl.module.scss";
-import stylesCommon from "@/assets/scss/section/module/cm.module.scss";
+import styles from "../../assets/scss/section/module/tl.module.scss";
+import stylesCommon from "../../assets/scss/section/module/cm.module.scss";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
-import { timelineData } from "../constants/timelineData";
+import { timelineData } from "../../constants/timelineData";
 
 
 

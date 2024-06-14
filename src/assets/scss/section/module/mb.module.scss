@@ -78,7 +78,7 @@
     }
     .subtxt {
         font-size:.6em;
-        @include position(absolute, $bottom:-120px, $left:50%);
+        @include position(absolute, $bottom:-140px, $left:50%);
         @include translateX;
         width:$full;
         opacity:$zero;
