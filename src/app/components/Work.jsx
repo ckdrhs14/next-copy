@@ -43,6 +43,16 @@ const Work = () => {
         { scope: main }
     );
 
+    const seongNam = workData.filter((data) => {
+        return data.korTitle.includes('성남시');
+    });
+
+    const shopList = workData.filter((data) => {
+        return data.type === "shop";
+    });
+
+    const sumList = shopList.concat(seongNam)
+
     return (
         <div className={`${stylesCommon.section} ${styles.section3}`} ref={main}>
             <div className={`${stylesCommon.innerWrap} ${styles.innerWrap} innerWrap`}>
@@ -60,10 +70,10 @@ const Work = () => {
                     }}
                     modules={[Pagination]}
                 >
-                    {workData.map((slide) => (
-                    <SwiperSlide key={slide.id}>         
+                    {sumList.map((slide) => (
+                    <SwiperSlide key={slide.id}>
                         <div className="swiper-slide">
-                            <Link href="page/list/idfmall.html" target="_blank" title="새창열림">
+                            <Link href={`/list/${slide.id}`}>
                                 <div className={styles.imgArea}>
                                     <img src={url + 'web_' + slide.type + '_' + slide.number + '.jpg'} />
                                 </div>
@@ -86,7 +96,7 @@ const Work = () => {
                 </Swiper>
 
                 <div className={`${stylesCommon.btnGroup} ${stylesCommon.center} ${styles.btnGroup}`}>
-                    <Link href="page/introduce.html" className={stylesCommon.btn}>전체보기</Link>
+                    <Link href="/list" className={stylesCommon.btn}>전체보기</Link>
                 </div>
             </div>
         </div>

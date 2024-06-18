@@ -1,47 +1,128 @@
 import { useState } from "react";
+import Link from 'next/link'
+import { workData } from "../../constants/workData";
 import styles from "../../assets/scss/section/module/ct.module.scss";
 
-export default function Tab() {
-  const data = [
-    {
-      id: 0,
-      title: "전체",
-      description: "HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript)."
-    },
-    {
-      id: 1,
-      title: "쇼핑몰",
-      description: "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media."
-    },
-    {
-      id: 2,
-      title: "도서관 및 공공기관",
-      description: "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."
-    },
-    {
-      id: 3,
-      title: "개인작업물",
-      description: "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."
-    }
-  ];
-  const [index, setIndex] = useState(0);
+const url = "img/portfolio/";
+
+export default function Tab(props) {
+
+  let [tab, setTab] = useState(0);
+  
+  const tabClickHandler=(index)=>{
+    setTab(index);
+  };
 
   return (
-        <>
-            <div className={styles.tab}>
-                {data.map(item => (
-                    <div 
-                    key={item.id}
-                    className={index === item.id ? styles.on : null}
-                    onClick={() => setIndex(item.id)}>
-                        <a href="#none">{item.title}</a>
-                    </div>
-                ))}
-            </div>
-            
-            {data.filter(item => index === item.id).map(item => (
-                <div className={styles.tabContent}>{item.description}</div>
-            ))}
-        </>
+    <>
+    <div className="container">
+
+      <div className={styles.tab} variant="tabs" defaultactivekey="link0">
+          <div eventKey="link0" onClick={()=> {setTab(0); tabClickHandler(0);}} className={tab === 0 ? `${styles.on}` : ""}><span>쇼핑몰</span></div>
+          <div eventKey="link1" onClick={()=> {setTab(1); tabClickHandler(1);}} className={tab === 1 ? `${styles.on}` : ""}><span>도서관 및 공공기관</span></div>
+          <div eventKey="link2" onClick={()=> {setTab(2); tabClickHandler(2);}} className={tab === 2 ? `${styles.on}` : ""}><span>개인작업물</span></div>
+      </div>
+      
+      <TabContent tab={tab}/>
+    
+    </div> 
+    </>
   )
 }
+
+
+function TabContent(props){
+
+  const shopList = workData.filter((data) => {
+    return data.type === "shop";
+  });
+
+  const libList = workData.filter((data) => {
+    return data.type === "lib";
+  });
+
+  const etcList = workData.filter((data) => {
+    return data.type === "etc";
+  });
+
+  if (props.tab === 0) {
+    return (
+      <ul className={`${styles.pjList} ${styles.col3}`}>
+      {shopList.map((slide) => (
+        <li key={slide.id}>
+          <Link href={`/list/${slide.id}`}>
+            <div className={styles.imgArea}>
+                <img src={url + 'web_' + slide.type + '_' + slide.number + '.jpg'} />
+            </div>
+            <div className={styles.txtArea}>
+                <h3 className={styles.title}>{slide.korTitle}<span>({slide.engTitle})</span></h3>
+                <p><b>사업기간</b> : {slide.date}</p>
+                <p><b>발주처</b> : {slide.client}</p>
+                <div className={styles.color}>
+                    <p><b>color</b></p>
+                    <div>
+                        <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
+                        <p>Sub <span style={{backgroundColor:slide.subColor,}}></span>({slide.subColor})</p>
+                    </div>
+                </div>
+            </div>
+          </Link>
+        </li>
+        ))}
+      </ul>
+    )
+  } else if (props.tab === 1) {
+    return (
+      <ul className={`${styles.pjList} ${styles.col3}`}>
+      {libList.map((slide) => (
+        <li key={slide.id}>
+          <Link href={`/list/${slide.id}`}>
+            <div className={styles.imgArea}>
+                <img src={url + 'web_' + slide.type + '_' + slide.number + '.jpg'} />
+            </div>
+            <div className={styles.txtArea}>
+                <h3 className={styles.title}>{slide.korTitle}<span>({slide.engTitle})</span></h3>
+                <p><b>사업기간</b> : {slide.date}</p>
+                <p><b>발주처</b> : {slide.client}</p>
+                <div className={styles.color}>
+                    <p><b>color</b></p>
+                    <div>
+                        <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
+                        <p>Sub <span style={{backgroundColor:slide.subColor,}}></span>({slide.subColor})</p>
+                    </div>
+                </div>
+            </div>
+          </Link>
+        </li>
+        ))}
+      </ul>
+    )
+  } else if (props.tab === 2) {
+    return (
+      <ul className={`${styles.pjList} ${styles.col3}`}>
+      {etcList.map((slide) => (
+        <li key={slide.id}>
+          <Link href={`/list/${slide.id}`}>
+            <div className={styles.imgArea}>
+                <img src={url + 'web_' + slide.type + '_' + slide.number + '.jpg'} />
+            </div>
+            <div className={styles.txtArea}>
+                <h3 className={styles.title}>{slide.korTitle}<span>({slide.engTitle})</span></h3>
+                <p><b>사업기간</b> : {slide.date}</p>
+                <p><b>발주처</b> : {slide.client}</p>
+                <div className={styles.color}>
+                    <p><b>color</b></p>
+                    <div>
+                        <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
+                        <p>Sub <span style={{backgroundColor:slide.subColor,}}></span>({slide.subColor})</p>
+                    </div>
+                </div>
+            </div>
+          </Link>
+        </li>
+        ))}
+      </ul>
+    )
+  }
+}
+

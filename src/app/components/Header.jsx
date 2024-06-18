@@ -31,9 +31,9 @@ const Header = () => {
             {/* <div className={`${styles.overlay} ${isActive ? 'is-open': ''}`}> */}
                 <ul>
                     <li><Link href="/">HOME</Link></li>
-                    <li><Link href="/list/[id]" as="/list/1">WORK PORTFOLIO</Link></li>
-                    <li><Link href="/list">SKILL PORTFOLIO</Link></li>
-                    <li><Link href="./page/introduce.html">INTRODUCE</Link></li>
+                    <li><Link href="/list">WORK PORTFOLIO</Link></li>
+                    <li><Link href="/skill">SKILL PORTFOLIO</Link></li>
+                    <li><Link href="/introduce">INTRODUCE</Link></li>
                 </ul>
                 <a href="#none" className={styles.closeBtn} style={{opacity:'1'}} onClick={closeMenu}>창 닫기</a>
             </div>

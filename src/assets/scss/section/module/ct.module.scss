@@ -12,7 +12,7 @@ $url: "/img/contents/";
 .contentWrap {
 	width:1200px;
 	margin:0 auto;
-	@include padding($top:50px, $bottom:120px);
+	@include padding($top:50px);
 	@include transition;
 }
 .sVisualWrap {
@@ -80,7 +80,8 @@ $url: "/img/contents/";
 		text-align:center;
 		transition: transform 0.3s ease-in;
 		color:#fff;
-		a {
+		flex-grow:1;
+		span {
 			display:block;
 			height:$size;
 			line-height:$size;
@@ -89,12 +90,13 @@ $url: "/img/contents/";
 			transition: color 0s;
 			letter-spacing:-0.05em;
 			font-weight:400;
+			cursor:pointer;
 			&:hover {
 				box-sizing:border-box;
 			}
 		}
 		&.on {
-			a {
+			span {
 				color:#000;
                 background:#fff;
 				font-weight:700;
@@ -421,6 +423,7 @@ $url: "/img/contents/";
 
 .skillList {
 	overflow:hidden;
+	margin-top:150px;
 	@include padding($bottom:100px);
 	.title {
 		font : {
@@ -495,6 +498,7 @@ $url: "/img/contents/";
 			weight:800;
 		}
 		letter-spacing:-0.1em;
+		margin-top: 50px;
 	}
 	.btnGroup {
 		display:flex;
@@ -630,7 +634,7 @@ $url: "/img/contents/";
 	}
 	.tab {
 		div {
-			a {
+			span {
 				font-size:1.1em;
 			}
 		}
@@ -667,7 +671,7 @@ $url: "/img/contents/";
 		div {
 			height:$size;
 			line-height:$size;
-			a {
+			span {
 				height:$size;
 				line-height:$size;
 			}
@@ -802,7 +806,7 @@ $url: "/img/contents/";
 	}
 	.tab {
 		div {
-			a {
+			span {
 				@include padding($right:10px, $left:10px);
 				height:45px;
 				line-height:normal;

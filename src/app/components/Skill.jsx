@@ -45,6 +45,10 @@ const Skill = () => {
         { scope: main }
     );
 
+    const skillList = skillData.filter((data) => {
+        return data.role === 'js';
+    });
+
     return (
         <div className={`${stylesCommon.section} ${styles.section4}`} ref={main}>
             <div className={`${stylesCommon.innerWrap} ${styles.innerWrap} innerWrap`}>
@@ -62,7 +66,7 @@ const Skill = () => {
                     }}
                     modules={[Pagination]}
                 >
-                    {skillData.map((slide) => (
+                    {skillList.map((slide) => (
                     <SwiperSlide key={slide.id}>         
                         <div className="swiper-slide">
                             <Link href="page/list/idfmall.html" target="_blank" title="새창열림">
