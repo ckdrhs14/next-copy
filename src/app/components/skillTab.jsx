@@ -24,7 +24,7 @@ export default function Tab(props) {
 
   return (
     <>
-    <div className="container">
+    <div className="containers">
 
       <div className={styles.tab} variant="tabs" defaultactivekey="link0">
           <div eventKey="link0" onClick={()=> {setTab(0); tabClickHandler(0);}} className={tab === 0 ? `${styles.on}` : ""}><span>구현예제</span></div>

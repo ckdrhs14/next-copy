@@ -212,8 +212,10 @@ $url: "/img/contents/";
 							@include margin($right:6px, $left:12px);
 						}
 					}
-					p + p {
-						@include margin($top:0, $left:10px);
+					div {
+						p {
+							@include margin($top:0, $right:10px);
+						}
 					}
 				}
 				.row {
@@ -706,14 +708,6 @@ $url: "/img/contents/";
 					font-size:1.6em;
 					line-height:1.1;
 				}
-				.color {
-					p {
-						@include margin($right:10px);
-					}
-					p + p {
-						@include margin($left:0px !important);
-					}
-				}
 			}
 		}
 		
@@ -777,11 +771,6 @@ $url: "/img/contents/";
 						font-size:13px;
 						height:$size;
 						line-height:$size;
-					}
-				}
-				.color {
-					p {
-						@include margin($top:8px);
 					}
 				}
 			}

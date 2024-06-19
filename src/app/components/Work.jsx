@@ -98,8 +98,11 @@ const Work = () => {
                                     <div className={styles.color}>
                                         <p><b>color</b></p>
                                         <div>
-                                            <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
-                                            <p>Sub <span style={{backgroundColor:slide.subColor,}}></span>({slide.subColor})</p>
+                                            { slide.mainColor === '#000' ?
+                                                <p>Main <span style={{backgroundColor:slide.mainColor, border:"1px solid #fff"}}></span>({slide.mainColor})</p>
+                                                : <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
+                                            }
+                                            <p>Sub <span style={{backgroundColor:slide.subColor}}></span>({slide.subColor})</p>
                                         </div>
                                     </div>
                                 </div>

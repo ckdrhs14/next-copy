@@ -83,7 +83,7 @@ const Skill = () => {
                     {skillList.map((slide) => (
                     <SwiperSlide key={slide.id}>         
                         <div className="swiper-slide">
-                            <Link href="page/list/idfmall.html" target="_blank" title="새창열림">
+                            <Link href={`https://glittery-cajeta-a9c59c.netlify.app/page/myweb/${slide.urlEng}/`} target="_blank" title="새창열림">
                                 <div className={styles.imgArea}>
                                     <img src={url + 'skill_' + slide.number + '.jpg'} />
                                 </div>

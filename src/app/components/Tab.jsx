@@ -23,7 +23,7 @@ export default function Tab(props) {
 
   return (
     <>
-    <div className="container">
+    <div className="containers">
 
       <div className={styles.tab} variant="tabs" defaultactivekey="link0">
           <div eventKey="link0" onClick={()=> {setTab(0); tabClickHandler(0);}} className={tab === 0 ? `${styles.on}` : ""}><span>쇼핑몰</span></div>
@@ -71,8 +71,11 @@ function TabContent(props){
                 <div className={styles.color}>
                     <p><b>color</b></p>
                     <div>
-                        <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
-                        <p>Sub <span style={{backgroundColor:slide.subColor,}}></span>({slide.subColor})</p>
+                      { slide.mainColor === '#000' ?
+                          <p>Main <span style={{backgroundColor:slide.mainColor, border:"1px solid #fff"}}></span>({slide.mainColor})</p>
+                          : <p>Main <span style={{backgroundColor:slide.mainColor}}></span>({slide.mainColor})</p>
+                      }
+                      <p>Sub <span style={{backgroundColor:slide.subColor}}></span>({slide.subColor})</p>
                     </div>
                 </div>
             </div>
