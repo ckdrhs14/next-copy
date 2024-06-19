@@ -663,6 +663,7 @@ $url: "/img/contents/";
 @media screen and (max-width: 1024px){
 	.container {
 		margin-top:60px;
+		margin-bottom:60px;
 	}
 	.contentWrap {
 		@include padding($top:50px, $right:30px, $bottom:50px, $left:30px);
