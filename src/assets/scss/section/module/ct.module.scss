@@ -117,6 +117,15 @@ $url: "/img/contents/";
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
 }
 
+.fadeStart {
+	opacity:0;
+}
+
+.fadeEnd {
+	opacity:1;
+	transition: opacity .5s;
+}
+
 .pjList {
     display:flex;
 	&.col3 {
@@ -431,7 +440,6 @@ $url: "/img/contents/";
 			weight:800;
 		}
 		@include margin($bottom:50px);
-		letter-spacing:-0.1em;
 	}
 	.swiper-wrapper {
 		.box {
@@ -497,7 +505,6 @@ $url: "/img/contents/";
 			size:3.4em;
 			weight:800;
 		}
-		letter-spacing:-0.1em;
 		margin-top: 50px;
 	}
 	.btnGroup {
@@ -882,6 +889,15 @@ $url: "/img/contents/";
 			}
 			p {
 				font-size:1.2em;
+			}
+		}
+	}
+
+	.contactArea {
+		.btnGroup {
+			margin:15px 0;
+			.btn {
+				padding:12px 45px;
 			}
 		}
 	}

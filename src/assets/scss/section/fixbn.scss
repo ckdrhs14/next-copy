@@ -53,3 +53,27 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
+@media screen and (max-width: 768px){
+    .fix_bn {
+        > div {
+            p {
+                span {
+                    font-size:16px;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 640px){
+    .fix_bn {
+        > div {
+            p {
+                span {
+                    font-size:15px;
+                }
+            }
+        }
+    }
+}

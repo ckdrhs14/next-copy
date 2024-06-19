@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link'
 import { skillData } from "../../constants/skillData";
 import styles from "../../assets/scss/section/module/ct.module.scss";
@@ -9,6 +9,14 @@ const urlIco = "img/icon/";
 export default function Tab(props) {
 
   let [tab, setTab] = useState(0);
+  let [fade, setFade] = useState('');
+
+  useEffect(()=>{
+    setTimeout(()=>{ setFade('fadeEnd') }, 200)
+    return ()=>{
+      setFade('')
+    }
+  }, [tab])
   
   const tabClickHandler=(index)=>{
     setTab(index);
@@ -24,7 +32,9 @@ export default function Tab(props) {
           <div eventKey="link2" onClick={()=> {setTab(2); tabClickHandler(2);}} className={tab === 2 ? `${styles.on}` : ""}><span>기타</span></div>
       </div>
       
-      <TabContent tab={tab}/>
+      <div className={`fadeStart ${fade}`}>
+        <TabContent tab={tab}/>
+      </div>
     
     </div> 
     </>

@@ -120,3 +120,51 @@
         font-size:3.6em;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .slogan {
+        font-size:3em;
+        .subtxt {
+            bottom:-100px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .objectArea {
+        width:350px;
+        height:350px;
+    }
+    .slogan {
+        .maintxt {
+            min-height:auto;
+            margin-bottom:20px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .objectArea {
+        width:280px;
+        height:280px;
+    }
+    .slogan {
+        font-size:2.8em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .objectArea {
+        width:200px;
+        height:200px;
+    }
+	.slogan {
+        .subtxt {
+            bottom:-85px;
+        }
+    }
+    .section1 {
+        min-height:0;
+        height:100%;
+    }
+}

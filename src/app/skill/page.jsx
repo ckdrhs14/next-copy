@@ -10,16 +10,9 @@ const url = "img/portfolio/";
 export default function List(props) {
 
 
-  const [topcis, setTopics] = useState([]);
+  const [topics, setTopics] = useState([]);
 
     useEffect(()=> {
-      fetch('http://localhost:9999/topics')
-        .then((resp)=>{
-          return resp.json();
-      })
-        .then(result=>{
-          setTopics(result);
-      });
 
       
       document.querySelector('header').style.top = '0'

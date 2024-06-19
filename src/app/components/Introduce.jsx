@@ -36,7 +36,6 @@ const Introduce = () => {
     
     return (
         <div className={`${stylesCommon.section} ${styles.section2}`} ref={main}>
-            <canvas id="myCanvas" width="100%" height="100%"></canvas>
             <div>
                 <div className={`${stylesCommon.innerWrap} ${styles.innerWrap} innerWrap`}>
                     <div className={`${stylesCommon.box} ${styles.box}`}>
@@ -59,7 +58,7 @@ const Introduce = () => {
                         </div>
                     </div>
                     <div className={`${stylesCommon.btnGroup} ${styles.btnGroup}`}>
-                        <Link href="page/introduce.html" className={stylesCommon.btn}>소개 더보기</Link>
+                        <Link href="/introduce" className={stylesCommon.btn}>소개 더보기</Link>
                     </div>
                 </div>
             </div>

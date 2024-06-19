@@ -63,12 +63,26 @@ const Work = () => {
 
                 <Swiper className={styles.workSwiper}
                     loop={true} // 슬라이드 루프
-                    spaceBetween={30} // 슬라이스 사이 간격
-                    slidesPerView={3} // 보여질 슬라이스 수
+                    spaceBetween={20} // 슬라이스 사이 간격
+                    slidesPerView={1.5} // 보여질 슬라이스 수
                     pagination={{
                         type: "progressbar",
                     }}
                     modules={[Pagination]}
+                    breakpoints={{
+                      480:{
+                        slidesPerView:1.5,
+                        spaceBetween:20
+                        },
+                      768:{
+                        slidesPerView:2.5,
+                        spaceBetween:20
+                        },
+                      1024:{
+                         slidesPerView:3,
+                         spaceBetween:30
+                        }
+                    }}
                 >
                     {sumList.map((slide) => (
                     <SwiperSlide key={slide.id}>

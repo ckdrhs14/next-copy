@@ -60,3 +60,42 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 1024px){
+	.section2 {
+        .innerWrap {
+            .imgArea {
+                margin:0 0 40px 0;
+            }
+            .txtArea {
+                text-align:center;
+                width:100%;
+            }
+        }
+        .btnGroup {
+            margin:0 auto;
+            text-align:center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .section2 {
+        .innerWrap {
+            .imgArea {
+                margin:0 0 30px 0;
+                width:240px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .section2 {
+        .innerWrap {
+            .imgArea {
+                width:220px;
+            }
+        }
+    }
+}
