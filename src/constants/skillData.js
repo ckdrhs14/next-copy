@@ -74,7 +74,7 @@ export const skillData = [
         type: 'jquery',
         type2: 'javascript',
         role: 'js',
-        urlEng: 'randomThumbnail'
+        urlEng: 'random_thumb'
     },
     {
         id: 8,

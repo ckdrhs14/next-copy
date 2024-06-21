@@ -60,7 +60,7 @@ export default function List(props) {
                     <Swiper className={styles.workSwiper}
                         loop={true} // 슬라이드 루프
                         spaceBetween={10} // 슬라이스 사이 간격
-                        slidesPerView={5} // 보여질 슬라이스 수
+                        slidesPerView={1.5} // 보여질 슬라이스 수
                         breakpoints={{
                             480:{
                               slidesPerView:1.5             

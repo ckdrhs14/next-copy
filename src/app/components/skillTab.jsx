@@ -12,7 +12,7 @@ export default function Tab(props) {
   let [fade, setFade] = useState('');
 
   useEffect(()=>{
-    setTimeout(()=>{ setFade('fadeEnd') }, 200)
+    setTimeout(()=>{ setFade('fadeEnd') }, 300)
     return ()=>{
       setFade('')
     }
